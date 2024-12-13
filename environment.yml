@@ -1,0 +1,26 @@
+name: llm
+dependencies:
+  - python=3.11.10
+  - pip
+  - pip:
+    - numpy==1.26.4
+    - pandas==2.2.3
+    - jupyter==1.1.1
+    - ipython==8.30.0
+    - datasets==3.1.0
+    - torch==2.5.1
+    - torchdata==0.9.0
+    - transformers==4.46.3
+    - trl==0.12.1
+    - evaluate==0.4.3
+    - rouge_score==0.1.2
+    - peft==0.13.2
+    - scikit-learn==1.5.2
+    - keras-hub==0.18.0
+    - keras-nlp==0.18.0
+    - einops==0.8.0
+    - matplotlib==3.9.3
+    - seaborn==0.13.2
+    - loralib==0.1.2
+    - tf-keras==2.18.0
+    - sentencepiece==0.2.0
