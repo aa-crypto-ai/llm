@@ -24,3 +24,4 @@ dependencies:
     - loralib==0.1.2
     - tf-keras==2.18.0
     - sentencepiece==0.2.0
+    - flask==3.1.0

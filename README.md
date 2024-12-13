@@ -21,11 +21,10 @@ docker run -it --rm --gpus all ubuntu nvidia-smi
 then go to https://hub.docker.com/r/nvidia/cuda/tags to choose the appropriate image and modify the `Dockerfile` if needed
 
 ## Build and run the docker
+The jupyter notebook server and a dummy web site is at port 8888 and 8080 respectively.
+A local folder, specified in `docker-compose.yml`, is mounted to `/usr/src/app/doc` in the docker for access to files.
 ```
 git clone https://github.com/aa-crypto-ai/llm.git
 cd llm
-docker build -t llm .
-# to keep the container not exiting
-docker run -dit llm
-docker exec -it <container_id> bash
+docker-compose up --build
 ```

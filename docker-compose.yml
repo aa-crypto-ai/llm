@@ -1,0 +1,18 @@
+version: '3'
+services:
+  jupyter:
+    image: llm
+    build: 
+      context: .
+    volumes:
+      - ~/doc:/usr/src/app/doc
+    ports:
+      - 8888:8888
+    command: "jupyter notebook --ip 0.0.0.0 --no-browser"
+  web:
+    image: llm
+    volumes:
+      - ~/doc:/usr/src/app/doc
+    ports:
+      - 8080:8080
+    command: "python app.py"
