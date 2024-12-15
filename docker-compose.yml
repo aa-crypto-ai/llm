@@ -1,7 +1,7 @@
 version: '3'
 services:
   jupyter:
-    image: llm
+    image: llm/base
     build: 
       context: .
     deploy:
@@ -17,7 +17,7 @@ services:
       - 8888:8888
     command: "jupyter notebook --ip 0.0.0.0 --no-browser"
   web:
-    image: llm
+    image: llm/base
     deploy:
       resources:
         reservations:

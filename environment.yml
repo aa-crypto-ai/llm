@@ -9,28 +9,28 @@ dependencies:
   - datasets=3.1.0
   - Django=5.1.4
   - einops=0.8.0
-  - evaluate=0.4.3
   - flask=3.1.0
   - ipython=8.30.0
   - jupyter=1.1.1
-  - keras-hub=0.18.0
-  - keras-nlp=0.18.0
   - loralib=0.1.2
   - matplotlib=3.9.3
   - numpy=1.26.4
   - pandas=2.2.3
   - peft=0.13.2
-  - rouge_score=0.1.2
+  - python-dotenv=1.0.1
   - scikit-learn=1.5.2
   - seaborn=0.13.2
   - sentencepiece=0.2.0
-  - tf-keras=2.18.0
-  - torch=2.5.1
-  - torchdata=0.9.0
   - transformers=4.46.3
   - trl=0.12.1
 
   - pip:
+    - evaluate==0.4.3
+    - keras-hub==0.18.0
+    - keras-nlp==0.18.0
+    - rouge_score==0.1.2
+    - tf-keras==2.18.0
     - torch==2.5.1
-    - torchvision==0.20.1
     - torchaudio==2.5.1
+    - torchdata==0.9.0
+    - torchvision==0.20.1
