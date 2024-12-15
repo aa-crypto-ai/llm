@@ -3,6 +3,7 @@ FROM nvidia/cuda:11.6.1-base-ubuntu20.04
 
 RUN apt update && \
     apt install -y bash \
+                   vim \
                    build-essential \
                    git \
                    curl \
