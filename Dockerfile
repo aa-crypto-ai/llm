@@ -1,5 +1,5 @@
 # pick the one matching your GPU spec - https://hub.docker.com/r/nvidia/cuda/tags
-FROM nvidia/cuda:11.0.3-cudnn8-runtime-ubuntu20.04
+FROM nvidia/cuda:11.6.1-base-ubuntu20.04
 
 RUN apt update && \
     apt install -y bash \

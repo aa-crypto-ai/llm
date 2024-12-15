@@ -4,6 +4,13 @@ services:
     image: llm
     build: 
       context: .
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1 # alternatively, use `count: all` for all GPUs
+              capabilities: [gpu]
     volumes:
       - ~/doc:/usr/src/app/doc
     ports:
@@ -11,6 +18,13 @@ services:
     command: "jupyter notebook --ip 0.0.0.0 --no-browser"
   web:
     image: llm
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1 # alternatively, use `count: all` for all GPUs
+              capabilities: [gpu]
     volumes:
       - ~/doc:/usr/src/app/doc
     ports:
