@@ -34,3 +34,5 @@ dependencies:
     - torchaudio==2.5.1
     - torchdata==0.9.0
     - torchvision==0.20.1
+    # currently lightning stable version does not support pytorch>=2.5, use below version for ongoing pytorch 2.5.1 support
+    - lightning==2.5.0rc0
